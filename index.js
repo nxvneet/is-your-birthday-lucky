@@ -9,8 +9,6 @@ function numberCheckHandler() {
     const newUserDobValue = userDobValue.replaceAll('-', '0');
     const userNumValue = userNum.value;
 
-
-
     const digits = newUserDobValue.split("").map(Number);
 
 
@@ -20,7 +18,12 @@ function numberCheckHandler() {
         return a + b;
     }, 0);
 
-    console.log(sum);
+    if (sum % userNumValue == 0) {
+        message.innerText = userNumValue + " is a lucky number!!!";
+    }
+    else {
+        message.innerText = userNumValue + " is not that lucky";
+    }
 
 }
 

@@ -9,11 +9,18 @@ function numberCheckHandler() {
     const newUserDobValue = userDobValue.replaceAll('-', '0');
     const userNumValue = userNum.value;
 
-    const sum =
+
+
+    const digits = newUserDobValue.split("").map(Number);
 
 
 
-        console.log("clicked" + newUserDobValue);
+    // Calculate the sum of the digits
+    var sum = digits.reduce(function (a, b) {
+        return a + b;
+    }, 0);
+
+    console.log(sum);
 
 }
 

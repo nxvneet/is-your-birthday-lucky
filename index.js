@@ -21,13 +21,13 @@ function numberCheckHandler() {
     }, 0);
 
     if (userDobValue == "" || userNumValue == "") {
-        message.innerText = "Please fill both fields";
+        message.innerText = "Please fill both the fields";
         return;
     }
 
     else {
         if (sum % userNumValue == 0) {
-            message.innerText = userNumValue + " is a lucky number!!!";
+            message.innerText = userNumValue + " is a lucky number!! 🥳🥳🥳";
         }
         else {
             message.innerText = userNumValue + " is not that lucky";
